@@ -21,7 +21,6 @@ export default function NotFound() {
       <Link
         href="/"
         className={styles.notFoundBtn}
-        onClick={handleLinkClick}
       >
          Return home
       </Link>
