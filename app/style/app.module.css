@@ -1,0 +1,109 @@
+@media screen {
+  .appContainer {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    display: flex;
+    position: fixed;
+    overflow: hidden;
+    overflow-y: auto;
+    flex-direction: column;
+    color: var(--background-color);
+  }
+
+  .appNav {
+    gap: 20px;
+    display: flex;
+    padding: 20px 0;
+    align-items: center;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+
+  .appNav h1 {
+    font-weight: 500;
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .profile {
+    object-position: center;
+    border-radius: 360%;
+    object-fit: cover;
+    height: 70px;
+    width: 70px;
+  }
+
+  .cardWrapper {
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .cardWrapper h1 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+  }
+
+  .card {
+    gap: 10px;
+    width: 100%;
+    display: flex;
+    cursor: pointer;
+    border-radius: 12px;
+    flex-direction: column;
+  }
+
+  .cardImageWrapper {
+    width: inherit;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    border-radius: inherit;
+    justify-content: center;
+  }
+
+  .cardImage {
+    height: 80px;
+    width: 80px;
+  }
+}
+
+/* using it as global style for larger devices  */
+@media only screen and (min-width: 48em) {
+  .appNav {
+    gap: 0;
+    padding: 20px 0;
+    flex-direction: row;
+  }
+
+  .profile {
+    height: 50px;
+    width: 50px;
+  }
+
+  .cardWrapper {
+    justify-content: space-between;
+  }
+
+  .card {
+    width: 600px;
+  }
+}
+
+/* ipad pro screens & laptop */
+@media only screen and (min-width: 49em) and (max-width: 64em) {
+}
+
+/* large screens : Desktop and 4k screens */
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {
+}
+
+/* 5k screens and above */
+@media only screen and (min-width: 91em) {
+}
